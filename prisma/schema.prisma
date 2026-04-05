@@ -1,0 +1,18 @@
+// This is your Prisma schema file
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// Ye hai aapka Chat table jo Neon mein banay ga
+model ChatMessage {
+  id        String   @id @default(cuid())
+  userQuery String   @db.Text
+  aiReply   String   @db.Text
+  createdAt DateTime @default(now())
+}

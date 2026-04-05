@@ -1,26 +1,36 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* --- SCROLL FIX FOR BODY --- */
+html, body {
+  min-height: 100%;
+  height: auto; /* Fixed h-screen ko khatam karega */
+  overflow-y: auto; /* Vertical scroll allow karega */
+  overflow-x: hidden; /* Side scroll block rahega */
+  background-color: #030014;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* --- PREMIUM FLUID ANIMATION --- */
+@keyframes fluid-bg {
+  0% { transform: translate(0, 0) scale(1) rotate(0deg); }
+  33% { transform: translate(30px, -50px) scale(1.1) rotate(2deg); }
+  66% { transform: translate(-20px, 20px) scale(0.9) rotate(-2deg); }
+  100% { transform: translate(0, 0) scale(1) rotate(0deg); }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.animate-fluid {
+  animation: fluid-bg 20s ease-in-out infinite;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.animate-fluid-delayed {
+  animation: fluid-bg 25s ease-in-out infinite reverse;
+}
+
+/* Noise Texture (Keep it fixed so it stays during scroll) */
+.noise-layer {
+  position: fixed;
+  inset: 0;
+  opacity: 0.05;
+  pointer-events: none;
+  z-index: 50; /* Taake noise hamesha sab se upar rahe */
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
 }
