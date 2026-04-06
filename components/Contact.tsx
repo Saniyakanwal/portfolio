@@ -1,24 +1,19 @@
 "use client";
 import React, { useState } from "react";
-import { Mail, Phone, MapPin, Send, CheckCircle } from "lucide-react";
+import { Mail, MapPin, Send, CheckCircle } from "lucide-react";
 
 export default function Contact() {
-  // Form states to manage data and loading
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
   const [status, setStatus] = useState<"idle" | "sending" | "success">("idle");
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault(); // --- REFRESH ROKNE KE LIYE ---
+    e.preventDefault();
     setStatus("sending");
 
-    // Yahan aap apni API call (Prisma/Vercel) kar sakti hain
-    // Filhal hum simulation kar rahe hain
     setTimeout(() => {
       console.log("Form Data:", formData);
       setStatus("success");
-      setFormData({ name: "", email: "", message: "" }); // Form clear karna
-
-      // 3 seconds baad button wapis normal ho jaye ga
+      setFormData({ name: "", email: "", message: "" });
       setTimeout(() => setStatus("idle"), 3000);
     }, 1500);
   };
@@ -45,34 +40,40 @@ export default function Contact() {
 
           {/* 1. CONTACT INFO (Left Side) */}
           <div className="space-y-8">
-            <div className="flex items-start gap-6 group">
+            
+            {/* Email Section */}
+            <div className="flex items-center gap-6 group">
               <div className="p-4 rounded-2xl bg-white/5 border border-white/10 group-hover:border-[#f56a6a]/50 transition-colors">
                 <Mail className="w-6 h-6 text-[#f56a6a]" />
               </div>
-              <a
-                href="mailto:kanwal0155@gmail.com"
-                className="block group cursor-pointer"
-              >
-                <div>
-                  <h4 className="text-white font-bold text-lg group-hover:text-[#f56a6a] transition-colors">
-                    Email Me
-                  </h4>
-                  <p className="text-gray-400 text-sm group-hover:text-white transition-colors">
-                    kanwal0155@gmail.com
-                  </p>
-                </div>
-              </a>
+              <div>
+                <h4 className="text-white font-bold text-lg leading-none mb-1">Email Me</h4>
+                <a href="mailto:kanwal0155@gmail.com" className="text-gray-400 text-sm hover:text-[#f56a6a] transition-colors">
+                  kanwal0155@gmail.com
+                </a>
+              </div>
             </div>
 
-            <div className="flex flex-col gap-4">
-              <h4 className="text-white font-bold text-lg">Get In Touch</h4>
+            {/* Location Section */}
+            <div className="flex items-center gap-6 group">
+              <div className="p-4 rounded-2xl bg-white/5 border border-white/10 group-hover:border-[#f56a6a]/50 transition-colors">
+                <MapPin className="w-6 h-6 text-[#f56a6a]" />
+              </div>
+              <div>
+                <h4 className="text-white font-bold text-lg leading-none mb-1">Location</h4>
+                <p className="text-gray-400 text-sm">Karachi, Pakistan (Remote)</p>
+              </div>
+            </div>
 
+            <div className="pt-4 space-y-4">
+              <h4 className="text-white font-bold text-lg mb-4">Quick Links</h4>
+              
               {/* WhatsApp Action Button */}
               <a
                 href="https://wa.me/923477212290"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 bg-white/5 border border-white/10 p-3 rounded-xl hover:bg-[#25D366]/10 hover:border-[#25D366]/50 transition-all duration-300 group w-fit"
+                className="flex items-center gap-4 bg-white/5 border border-white/10 p-4 rounded-2xl hover:bg-[#25D366]/10 hover:border-[#25D366]/50 transition-all duration-300 group w-full sm:w-fit"
               >
                 <div className="bg-[#25D366] p-2 rounded-lg group-hover:scale-110 transition-transform">
                   <svg className="w-5 h-5 fill-white" viewBox="0 0 24 24">
@@ -80,36 +81,10 @@ export default function Contact() {
                   </svg>
                 </div>
                 <div className="flex flex-col">
-                  <span className="text-white text-sm font-medium">Chat on WhatsApp</span>
-                  <span className="text-gray-400 text-[10px]">Available for projects</span>
+                  <span className="text-white text-sm font-bold">Chat on WhatsApp</span>
+                  <span className="text-gray-400 text-[10px]">Direct Response</span>
                 </div>
               </a>
-
-              {/* Email Option */}
-              <a
-                href="mailto:your-email@gmail.com"
-                className="flex items-center gap-3 bg-white/5 border border-white/10 p-3 rounded-xl hover:bg-blue-500/10 hover:border-blue-500/50 transition-all duration-300 group w-fit"
-              >
-                <div className="bg-blue-500 p-2 rounded-lg group-hover:scale-110 transition-transform">
-                  <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                  </svg>
-                </div>
-                <div className="flex flex-col">
-                  <span className="text-white text-sm font-medium">Send an Email</span>
-                  <span className="text-gray-400 text-[10px]">Quick response</span>
-                </div>
-              </a>
-            </div>
-
-            <div className="flex items-start gap-6 group">
-              <div className="p-4 rounded-2xl bg-white/5 border border-white/10 group-hover:border-[#f56a6a]/50 transition-colors">
-                <MapPin className="w-6 h-6 text-[#f56a6a]" />
-              </div>
-              <div>
-                <h4 className="text-white font-bold text-lg">Location</h4>
-                <p className="text-gray-400 text-sm">Pakistan (Available for Remote Work)</p>
-              </div>
             </div>
           </div>
 
@@ -127,7 +102,7 @@ export default function Contact() {
                   value={formData.name}
                   onChange={handleChange}
                   type="text"
-                  placeholder="John Doe"
+                  placeholder="Your Name"
                   className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white outline-none focus:border-[#f56a6a]/50 transition-all text-sm"
                 />
               </div>
@@ -139,7 +114,7 @@ export default function Contact() {
                   value={formData.email}
                   onChange={handleChange}
                   type="email"
-                  placeholder="john@example.com"
+                  placeholder="email@example.com"
                   className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white outline-none focus:border-[#f56a6a]/50 transition-all text-sm"
                 />
               </div>
@@ -153,7 +128,7 @@ export default function Contact() {
                 value={formData.message}
                 onChange={handleChange}
                 rows={4}
-                placeholder="Tell me about your project..."
+                placeholder="How can I help you?"
                 className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white outline-none focus:border-[#f56a6a]/50 transition-all text-sm resize-none"
               ></textarea>
             </div>
@@ -181,7 +156,6 @@ export default function Contact() {
 
         </div>
       </div>
-      {/* Subtle Glow Effect */}
       <div className="absolute -left-20 bottom-0 w-64 h-64 bg-[#f56a6a]/10 blur-[100px] -z-10"></div>
     </section>
   );
