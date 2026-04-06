@@ -69,8 +69,22 @@ export default function Contact() {
                 <Phone className="w-6 h-6 text-[#c8a2c8]" />
               </div>
               <div>
-                <h4 className="text-white font-bold text-lg">Call / WhatsApp</h4>
-                <p className="text-gray-400 text-sm">+92 347 7212290</p>
+                <h4 className="text-white font-bold text-lg mb-1">Let's Connect</h4>
+                <a
+                  href="https://wa.me/923477212290"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex items-center gap-2 text-gray-400 hover:text-[#25D366] transition-colors duration-300"
+                >
+                  <span className="text-sm">+92 347 7212290</span>
+                  {/* Chota sa WhatsApp icon jo hover karne par green hoga */}
+                  <svg
+                    className="w-4 h-4 fill-current group-hover:scale-110 transition-transform"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.588-5.946 0-6.556 5.332-11.891 11.893-11.891 3.181 0 6.167 1.24 8.413 3.488 2.246 2.248 3.484 5.232 3.484 8.402 0 6.556-5.332 11.89-11.893 11.89-1.997 0-3.951-.5-5.688-1.448l-6.308 1.668zM6.49 19.394l.355.213c1.392.823 2.822 1.284 4.182 1.284 5.505 0 9.982-4.477 9.982-9.982 0-2.662-1.042-5.166-2.934-7.057-1.891-1.891-4.391-2.934-7.048-2.934-5.505 0-9.984 4.477-9.984 9.984 0 1.83.5 3.609 1.445 5.148l.235.389-1.113 4.06 4.148-1.099z" />
+                  </svg>
+                </a>
               </div>
             </div>
 
