@@ -21,7 +21,7 @@ export default function About() {
         <h2 className="text-xs font-bold tracking-[0.4em] text-[#f56a6a] uppercase mb-6 opacity-70">
           / Professional Summary
         </h2>
-        <p className="text-2xl md:text-4xl font-medium text-white leading-tight tracking-tight">
+        <p className="text-lg md:text-xl lg:text-2xl font-normal text-gray-300 leading-relaxed tracking-wide max-w-4xl">
           I am a <span className="text-[#c8a2c8]">Full Stack Developer</span> and
           <span className="text-gray-400"> AI Enthusiast</span>. Specialized in AI-Assisted Development: Leveraging cutting-edge models like GPT-4 and Qwen to build high-performance web applications 3x faster. I specialize in building
           intelligent web applications by merging modern frameworks with
