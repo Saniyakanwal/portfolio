@@ -64,28 +64,42 @@ export default function Contact() {
               </a>
             </div>
 
-            <div className="flex items-start gap-6 group">
-              <div className="p-4 rounded-2xl bg-white/5 border border-white/10 group-hover:border-[#c8a2c8]/50 transition-colors">
-                <Phone className="w-6 h-6 text-[#c8a2c8]" />
-              </div>
-              <div>
-                <h4 className="text-white font-bold text-lg mb-1">Let's Connect</h4>
-                <a
-                  href="https://wa.me/923477212290"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group flex items-center gap-2 text-gray-400 hover:text-[#25D366] transition-colors duration-300"
-                >
-                  <span className="text-sm">+92 347 7212290</span>
-                  {/* Chota sa WhatsApp icon jo hover karne par green hoga */}
-                  <svg
-                    className="w-4 h-4 fill-current group-hover:scale-110 transition-transform"
-                    viewBox="0 0 24 24"
-                  >
+            <div className="flex flex-col gap-4">
+              <h4 className="text-white font-bold text-lg">Get In Touch</h4>
+
+              {/* WhatsApp Action Button */}
+              <a
+                href="https://wa.me/923477212290"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 bg-white/5 border border-white/10 p-3 rounded-xl hover:bg-[#25D366]/10 hover:border-[#25D366]/50 transition-all duration-300 group w-fit"
+              >
+                <div className="bg-[#25D366] p-2 rounded-lg group-hover:scale-110 transition-transform">
+                  <svg className="w-5 h-5 fill-white" viewBox="0 0 24 24">
                     <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.588-5.946 0-6.556 5.332-11.891 11.893-11.891 3.181 0 6.167 1.24 8.413 3.488 2.246 2.248 3.484 5.232 3.484 8.402 0 6.556-5.332 11.89-11.893 11.89-1.997 0-3.951-.5-5.688-1.448l-6.308 1.668zM6.49 19.394l.355.213c1.392.823 2.822 1.284 4.182 1.284 5.505 0 9.982-4.477 9.982-9.982 0-2.662-1.042-5.166-2.934-7.057-1.891-1.891-4.391-2.934-7.048-2.934-5.505 0-9.984 4.477-9.984 9.984 0 1.83.5 3.609 1.445 5.148l.235.389-1.113 4.06 4.148-1.099z" />
                   </svg>
-                </a>
-              </div>
+                </div>
+                <div className="flex flex-col">
+                  <span className="text-white text-sm font-medium">Chat on WhatsApp</span>
+                  <span className="text-gray-400 text-[10px]">Available for projects</span>
+                </div>
+              </a>
+
+              {/* Email Option */}
+              <a
+                href="mailto:your-email@gmail.com"
+                className="flex items-center gap-3 bg-white/5 border border-white/10 p-3 rounded-xl hover:bg-blue-500/10 hover:border-blue-500/50 transition-all duration-300 group w-fit"
+              >
+                <div className="bg-blue-500 p-2 rounded-lg group-hover:scale-110 transition-transform">
+                  <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <div className="flex flex-col">
+                  <span className="text-white text-sm font-medium">Send an Email</span>
+                  <span className="text-gray-400 text-[10px]">Quick response</span>
+                </div>
+              </a>
             </div>
 
             <div className="flex items-start gap-6 group">
