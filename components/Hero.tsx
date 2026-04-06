@@ -67,7 +67,7 @@ export default function Hero() {
           
           {/* Title - Text small on mobile */}
           <h2 className="text-sm md:text-xl lg:text-2xl font-bold tracking-[0.15em] md:tracking-[0.2em] text-transparent bg-clip-text bg-gradient-to-r from-gray-200 to-gray-500 uppercase px-2">
-            Full Stack Developer
+             AI Full Stack Developer
           </h2>
 
           {/* CTA Buttons - Stacked on mobile, side-by-side on md */}
