@@ -38,55 +38,54 @@ export default function Contact() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
 
-          {/* 1. CONTACT INFO (Left Side) */}
-          <div className="space-y-8">
-            
-            {/* Email Section */}
-            <div className="flex items-center gap-6 group">
-              <div className="p-4 rounded-2xl bg-white/5 border border-white/10 group-hover:border-[#f56a6a]/50 transition-colors">
-                <Mail className="w-6 h-6 text-[#f56a6a]" />
-              </div>
-              <div>
-                <h4 className="text-white font-bold text-lg leading-none mb-1">Email Me</h4>
-                <a href="mailto:kanwal0155@gmail.com" className="text-gray-400 text-sm hover:text-[#f56a6a] transition-colors">
-                  kanwal0155@gmail.com
-                </a>
-              </div>
-            </div>
+         {/* 1. CONTACT INFO (Left Side) */}
+<div className="space-y-8">
+  
+  {/* Email Section */}
+  <div className="flex items-center gap-6 group">
+    <div className="p-4 rounded-2xl bg-white/5 border border-white/10 group-hover:border-[#f56a6a]/50 transition-colors">
+      <Mail className="w-6 h-6 text-[#f56a6a]" />
+    </div>
+    <div>
+      <h4 className="text-white font-bold text-lg mb-1">Email Me</h4>
+      <a href="mailto:kanwal0155@gmail.com" className="text-gray-400 text-sm hover:text-[#f56a6a] transition-colors">
+        kanwal0155@gmail.com
+      </a>
+    </div>
+  </div>
 
-            {/* Location Section */}
-            <div className="flex items-center gap-6 group">
-              <div className="p-4 rounded-2xl bg-white/5 border border-white/10 group-hover:border-[#f56a6a]/50 transition-colors">
-                <MapPin className="w-6 h-6 text-[#f56a6a]" />
-              </div>
-              <div>
-                <h4 className="text-white font-bold text-lg leading-none mb-1">Location</h4>
-                <p className="text-gray-400 text-sm">Karachi, Pakistan (Remote)</p>
-              </div>
-            </div>
+  {/* WhatsApp Section (Ab Same Design Mein) */}
+  <div className="flex items-center gap-6 group">
+    <div className="p-4 rounded-2xl bg-white/5 border border-white/10 group-hover:border-[#25D366]/50 transition-colors">
+      <svg className="w-6 h-6 text-[#25D366] fill-current" viewBox="0 0 24 24">
+        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.588-5.946 0-6.556 5.332-11.891 11.893-11.891 3.181 0 6.167 1.24 8.413 3.488 2.246 2.248 3.484 5.232 3.484 8.402 0 6.556-5.332 11.89-11.893 11.89-1.997 0-3.951-.5-5.688-1.448l-6.308 1.668zM6.49 19.394l.355.213c1.392.823 2.822 1.284 4.182 1.284 5.505 0 9.982-4.477 9.982-9.982 0-2.662-1.042-5.166-2.934-7.057-1.891-1.891-4.391-2.934-7.048-2.934-5.505 0-9.984 4.477-9.984 9.984 0 1.83.5 3.609 1.445 5.148l.235.389-1.113 4.06 4.148-1.099z" />
+      </svg>
+    </div>
+    <div>
+      <h4 className="text-white font-bold text-lg mb-1">WhatsApp</h4>
+      <a 
+        href="https://wa.me/923477212290" 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        className="text-gray-400 text-sm hover:text-[#25D366] transition-colors"
+      >
+        Chat with me directly
+      </a>
+    </div>
+  </div>
 
-            <div className="pt-4 space-y-4">
-              <h4 className="text-white font-bold text-lg mb-4">Quick Links</h4>
-              
-              {/* WhatsApp Action Button */}
-              <a
-                href="https://wa.me/923477212290"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-4 bg-white/5 border border-white/10 p-4 rounded-2xl hover:bg-[#25D366]/10 hover:border-[#25D366]/50 transition-all duration-300 group w-full sm:w-fit"
-              >
-                <div className="bg-[#25D366] p-2 rounded-lg group-hover:scale-110 transition-transform">
-                  <svg className="w-5 h-5 fill-white" viewBox="0 0 24 24">
-                    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.588-5.946 0-6.556 5.332-11.891 11.893-11.891 3.181 0 6.167 1.24 8.413 3.488 2.246 2.248 3.484 5.232 3.484 8.402 0 6.556-5.332 11.89-11.893 11.89-1.997 0-3.951-.5-5.688-1.448l-6.308 1.668zM6.49 19.394l.355.213c1.392.823 2.822 1.284 4.182 1.284 5.505 0 9.982-4.477 9.982-9.982 0-2.662-1.042-5.166-2.934-7.057-1.891-1.891-4.391-2.934-7.048-2.934-5.505 0-9.984 4.477-9.984 9.984 0 1.83.5 3.609 1.445 5.148l.235.389-1.113 4.06 4.148-1.099z" />
-                  </svg>
-                </div>
-                <div className="flex flex-col">
-                  <span className="text-white text-sm font-bold">Chat on WhatsApp</span>
-                  <span className="text-gray-400 text-[10px]">Direct Response</span>
-                </div>
-              </a>
-            </div>
-          </div>
+  {/* Location Section */}
+  <div className="flex items-center gap-6 group">
+    <div className="p-4 rounded-2xl bg-white/5 border border-white/10 group-hover:border-[#f56a6a]/50 transition-colors">
+      <MapPin className="w-6 h-6 text-[#f56a6a]" />
+    </div>
+    <div>
+      <h4 className="text-white font-bold text-lg mb-1">Location</h4>
+      <p className="text-gray-400 text-sm">Karachi, Pakistan (Remote)</p>
+    </div>
+  </div>
+
+</div>
 
           {/* 2. CONTACT FORM (Right Side) */}
           <form
