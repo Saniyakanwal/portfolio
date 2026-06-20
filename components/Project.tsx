@@ -19,28 +19,49 @@ const projects = [
     link: "https://sport-universe.netlify.app/", 
   },
   {
-    title: "A high-speed, feature-rich online shopping experience",
+    title: "LuxeStore",
     description: "A high-performance online store with dynamic product grids and mobile-first responsive design.",
     tech: ["Python", "E-commerce", "Prompt Engineering"],
     image: "/e commerce.png",
     link: "https://v0-e-commerce-website-with-next-js-pi.vercel.app/",
   },
   {
-    title: "A high-conversion digital menu and dining experience",
+    title: "AL-Bustan",
     description: "A premium restaurant landing page with a dynamic menu and high-impact visual storytelling.",
     tech: ["Next.js", "Tailwind CSS", "Responsive Design", "prompt engineering"],
     image: "/resturant.png",
     link: "https://v0-restaurant-landing-page-psi-two.vercel.app/",
   },
   {
-    title: "Futuristic landing page showcasing AI and robotics intersection",
+    title: "Physical AI Book",
     description: "A futuristic landing page showcasing the intersection of robotics and artificial intelligence with a sleek dark-mode UI.",
     tech: ["AI-Driven-Development", "Prompt Engineering","Qwen"],
     image: "/book.png",
     link: "https://physical-ai-book-psi.vercel.app/",
   },
   {
-    title: "A high-performance event management and showcase platform",
+    title: "FoodTuck",
+    description: "A high-performance event management platform designed for streamlined hackathon registrations and dynamic project showcases",
+    tech: ["Next.js", "Tailwind CSS", "TypeScript","Figma"],
+    image: "/food.png",
+    link: "https://hackaton-nextjs.vercel.app/"
+  },
+  {
+    title: "Smash & Bun",
+    description:"A premium, high-performance E-commerce platform featuring dynamic product collections, interactive filtering, and a seamless checkout experience",
+    tech: ["Next.js", "Tailwind CSS", "TypeScript","Lovable"],
+    image: "/bun.png",
+    link: "https://smash-and-glow.lovable.app/"
+  },
+  {
+    title: "FoodTuck",
+    description: "A high-performance event management platform designed for streamlined hackathon registrations and dynamic project showcases",
+    tech: ["Next.js", "Tailwind CSS", "TypeScript","Figma"],
+    image: "/food.png",
+    link: "https://hackaton-nextjs.vercel.app/"
+  },
+  {
+    title: "FoodTuck",
     description: "A high-performance event management platform designed for streamlined hackathon registrations and dynamic project showcases",
     tech: ["Next.js", "Tailwind CSS", "TypeScript","Figma"],
     image: "/food.png",
