@@ -48,7 +48,7 @@ const projects = [
   },
   {
     title: "Smash & Bun",
-    description:"A premium, high-performance E-commerce platform featuring dynamic product collections, interactive filtering, and a seamless checkout experience",
+    description:"A high-performance, fast-food ordering web app built for seamless menu browsing, interactive item customization, and quick cart management",
     tech: ["Next.js", "Tailwind CSS", "TypeScript","Lovable"],
     image: "/bun.png",
     link: "https://smash-and-glow.lovable.app/"
