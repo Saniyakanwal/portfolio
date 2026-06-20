@@ -54,18 +54,18 @@ const projects = [
     link: "https://smash-and-glow.lovable.app/"
   },
   {
-    title: "FoodTuck",
-    description: "A high-performance event management platform designed for streamlined hackathon registrations and dynamic project showcases",
-    tech: ["Next.js", "Tailwind CSS", "TypeScript","Figma"],
-    image: "/food.png",
-    link: "https://hackaton-nextjs.vercel.app/"
+    title: "Ember & Oak",
+    description: "An elegant, premium commercial web application featuring high-end editorial layouts, dynamic collection filtering, and seamless user flows",
+    tech: ["Next.js", "Tailwind CSS", "TypeScript","Lovable"],
+    image: "/oak.png",
+    link: "https://ember-and-ook.lovable.app/"
   },
   {
-    title: "FoodTuck",
-    description: "A high-performance event management platform designed for streamlined hackathon registrations and dynamic project showcases",
-    tech: ["Next.js", "Tailwind CSS", "TypeScript","Figma"],
-    image: "/food.png",
-    link: "https://hackaton-nextjs.vercel.app/"
+    title: "Aurum & Co",
+    description: "n ultra-luxury jewelry E-commerce platform built with a strict midnight aesthetic, dynamic product-specific routing, and custom PKR pricing layouts",
+    tech: ["Next.js", "Tailwind CSS","vercel"],
+    image: "/jewellery.png",
+    link: "https://aurum-co-e-commerce-app.vercel.app/"
   }
 ];
 
