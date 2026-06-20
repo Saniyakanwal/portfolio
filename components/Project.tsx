@@ -5,11 +5,46 @@ import { motion, Variants } from "framer-motion";
 // 1. UPDATE YOUR PROJECTS DATA HERE
 const projects = [
   {
+    title: "Ember & Oak",
+    description: "An elegant, premium commercial web application featuring high-end editorial layouts, dynamic collection filtering, and seamless user flows",
+    tech: ["Next.js", "Tailwind CSS", "TypeScript","Lovable"],
+    image: "/oak.png",
+    link: "https://ember-and-ook.lovable.app/"
+  },
+  {
+    title: "Smash & Bun",
+    description:"A high-performance, fast-food ordering web app built for seamless menu browsing, interactive item customization, and quick cart management",
+    tech: ["Next.js", "Tailwind CSS", "TypeScript","Lovable"],
+    image: "/bun.png",
+    link: "https://smash-and-glow.lovable.app/"
+  },
+   {
+    title: "FoodTuck",
+    description: "A high-performance event management platform designed for streamlined hackathon registrations and dynamic project showcases",
+    tech: ["Next.js", "Tailwind CSS", "TypeScript","Figma"],
+    image: "/food.png",
+    link: "https://hackaton-nextjs.vercel.app/"
+  },
+   {
+    title: "AL-Bustan",
+    description: "A premium restaurant landing page with a dynamic menu and high-impact visual storytelling.",
+    tech: ["Next.js", "Tailwind CSS", "Responsive Design", "prompt engineering"],
+    image: "/resturant.png",
+    link: "https://v0-restaurant-landing-page-psi-two.vercel.app/",
+  },
+  {
     title: "Rida Fatima Studio",
     description: "A premium creative agency platform designed for high-end digital storytelling and client acquisition.",
     tech: ["UI/UX Design", "Brand Identity","AI tool"],
     image: "/rida-fatima.png", 
     link: "https://rida-fatima-studio.durable.site/",
+  },
+   {
+    title: "Aurum & Co",
+    description: "n ultra-luxury jewelry E-commerce platform built with a strict midnight aesthetic, dynamic product-specific routing, and custom PKR pricing layouts",
+    tech: ["Next.js", "Tailwind CSS","vercel"],
+    image: "/jewellery.png",
+    link: "https://aurum-co-e-commerce-app.vercel.app/"
   },
   {
     title: "The Sports Universe",
@@ -26,46 +61,11 @@ const projects = [
     link: "https://v0-e-commerce-website-with-next-js-pi.vercel.app/",
   },
   {
-    title: "AL-Bustan",
-    description: "A premium restaurant landing page with a dynamic menu and high-impact visual storytelling.",
-    tech: ["Next.js", "Tailwind CSS", "Responsive Design", "prompt engineering"],
-    image: "/resturant.png",
-    link: "https://v0-restaurant-landing-page-psi-two.vercel.app/",
-  },
-  {
     title: "Physical AI Book",
     description: "A futuristic landing page showcasing the intersection of robotics and artificial intelligence with a sleek dark-mode UI.",
     tech: ["AI-Driven-Development", "Prompt Engineering","Qwen"],
     image: "/book.png",
     link: "https://physical-ai-book-psi.vercel.app/",
-  },
-  {
-    title: "FoodTuck",
-    description: "A high-performance event management platform designed for streamlined hackathon registrations and dynamic project showcases",
-    tech: ["Next.js", "Tailwind CSS", "TypeScript","Figma"],
-    image: "/food.png",
-    link: "https://hackaton-nextjs.vercel.app/"
-  },
-  {
-    title: "Smash & Bun",
-    description:"A high-performance, fast-food ordering web app built for seamless menu browsing, interactive item customization, and quick cart management",
-    tech: ["Next.js", "Tailwind CSS", "TypeScript","Lovable"],
-    image: "/bun.png",
-    link: "https://smash-and-glow.lovable.app/"
-  },
-  {
-    title: "Ember & Oak",
-    description: "An elegant, premium commercial web application featuring high-end editorial layouts, dynamic collection filtering, and seamless user flows",
-    tech: ["Next.js", "Tailwind CSS", "TypeScript","Lovable"],
-    image: "/oak.png",
-    link: "https://ember-and-ook.lovable.app/"
-  },
-  {
-    title: "Aurum & Co",
-    description: "n ultra-luxury jewelry E-commerce platform built with a strict midnight aesthetic, dynamic product-specific routing, and custom PKR pricing layouts",
-    tech: ["Next.js", "Tailwind CSS","vercel"],
-    image: "/jewellery.png",
-    link: "https://aurum-co-e-commerce-app.vercel.app/"
   }
 ];
 
